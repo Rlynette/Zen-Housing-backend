@@ -6,6 +6,16 @@ reviews = Review.all
 render json: reviews
 end
 
+    #GET/reviews/:id
+    def show
+      review = Review.find(params[:id])
+      if review
+        render json: review
+      else 
+        render json: { error: "Review not found" }, status: :not_found
+    end
+end
+
     #POST/reviews
        def create 
        review = Review.create!(review_params)

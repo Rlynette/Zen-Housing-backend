@@ -19,9 +19,9 @@ User.create(username: "Tim", password: "qwertyu", password_confirmation: "qwerty
 User.create(username: "Will", password: "qwertyu", password_confirmation: "qwertyu")
 User.create(username: "Grace", password: "qwertyu", password_confirmation: "qwertyu")
 
-4.times do 
-House.create(location: Faker::Address.full_address, pricing: rand(500..900))
-end
+House.create(location: Faker::Address.full_address, pricing: rand(500..900), name: Faker::Name.name, image:"https://i.postimg.cc/JhXwxbc3/image3.png" )
+House.create(location: Faker::Address.full_address, pricing: rand(500..900), name: Faker::Name.name, image:"https://i.postimg.cc/grbLwyDM/image4.png" )
+House.create(location: Faker::Address.full_address, pricing: rand(500..900), name: Faker::Name.name, image:"https://i.postimg.cc/VL9Rc4mZ/image5.png" )
 
 
 Review.create(user_id: rand(1..9), review: Faker::Lorem.paragraph(sentence_count: 2, supplemental: true), house_id: rand(1..4))

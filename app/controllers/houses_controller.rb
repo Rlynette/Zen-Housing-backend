@@ -8,7 +8,7 @@ class HousesController < ApplicationController
 
     #GET/houses/:id
     def show
-      house = House.find_by(params[:id])
+      house = House.find(params[:id])
       if house
         render json: house
       else 

@@ -42,6 +42,10 @@ run `rails s`
 
 
 ## Deployment
+Frontend-vercel link
+`zen-housing-frontend.vercel.app`
+
+Backend Railways link
 
 
 ## Copyright & License
