@@ -43,7 +43,7 @@ run `rails s`
 
 ## Deployment
 Frontend-vercel link
-`zen-housing-frontend.vercel.app`
+`https://zen-housing-frontend-brrq.vercel.app`
 
 Backend Railways link
 `https://zen-housing-backend-production.up.railway.app`
